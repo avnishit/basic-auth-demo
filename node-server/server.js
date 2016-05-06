@@ -92,7 +92,7 @@ app.get('/notes', validateJWT({secret: app.secret}), function(req, res) {
 
 	// lookup notes for user...
 	var notes = {
-		'id': 1
+		'id': 1,
 		'content': 'A note for user '+ userId,
 		'user': userId
 	};
